@@ -84,6 +84,7 @@ def test():
             target = target.cuda()
             
             output = model(data)
+            # print(output[0][0],target)
             # sum up batch loss
             test_loss += F.nll_loss(output, target).item()
             # get the index of the max
@@ -95,6 +96,6 @@ def test():
             test_loss, correct, len(test_loader.dataset),
             100. * correct / len(test_loader.dataset)))
 
-for epoch in range(1,10):
+for epoch in range(1,5):
     train(epoch)
     test()
