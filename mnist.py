@@ -49,6 +49,7 @@ class Net_NL(nn.Module):
         # flattern (b, 1, 28, 28) --> (n, 784)
         x = x.view(-1, 784)
         x = F.relu(self.l1(x))
+        # log_softmax = log(softmax(x))
         return F.log_softmax(self.l2(x), dim=1)
     
 #model = Net_L().cuda()    
