@@ -10,3 +10,21 @@
 3. Using SGD optimizer with lr=0.01 and momentum=0.5 and train epoch=9;
 4. Two finctions `train()` and `test()` give main data logic about;
 5. I use pytorch's `log_softmax()` instead of `softmax()` for computing efficiecy of loss;
+
+## 2. dataset
+    urls = [
+        'http://yann.lecun.com/exdb/mnist/train-images-idx3-ubyte.gz',
+        'http://yann.lecun.com/exdb/mnist/train-labels-idx1-ubyte.gz',
+        'http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz',
+        'http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz',
+    ]
+## 3. run training and test
+### System envirenment
+python == 3.7
+pytorch == 1.2.0
+torchvision == 0.4.0
+scipy == 1.2.1
+numpy == 1.16.4
+
+### run
+python mnist.py
