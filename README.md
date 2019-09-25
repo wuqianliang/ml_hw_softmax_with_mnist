@@ -19,7 +19,7 @@
         'http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz',
     ]
 ## 3. run training and test
-### System envirenment
+### 3.1 System envirenment
 python == 3.7
 
 pytorch == 1.2.0
@@ -31,5 +31,5 @@ scipy == 1.2.1
 numpy == 1.16.4
 
 
-### run
+### 3.2 run
 python mnist.py
