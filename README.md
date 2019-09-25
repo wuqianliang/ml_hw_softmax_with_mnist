@@ -20,11 +20,12 @@
     ]
 ## 3. run training and test
 ### System envirenment
-python == 3.7
-pytorch == 1.2.0
-torchvision == 0.4.0
-scipy == 1.2.1
-numpy == 1.16.4
+*python == 3.7
+*pytorch == 1.2.0
+*torchvision == 0.4.0
+*scipy == 1.2.1
+*numpy == 1.16.4
+
 
 ### run
 python mnist.py
